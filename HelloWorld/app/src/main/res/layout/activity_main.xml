@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.reena.helloworld.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Hello, my name is Reena. What's your favorite color?"
+        android:textColor="@android:color/holo_blue_light"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:text="BLUE"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        android:layout_marginStart="59dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="29dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_dark"
+        android:text="GREEN"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="29dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_purple"
+        android:text="PURPLE"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintRight_toRightOf="@+id/button2"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="31dp"
+        app:layout_constraintLeft_toLeftOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+        android:text="ORANGE"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintRight_toRightOf="@+id/button3"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="31dp"
+        app:layout_constraintLeft_toLeftOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_dark"
+        android:text="RED"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/button4"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="153dp"
+        app:layout_constraintLeft_toLeftOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:text="NONE"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/button6"
+        app:layout_constraintRight_toRightOf="@+id/button5"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/button5"
+        app:layout_constraintTop_toTopOf="@+id/button6" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ballin"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="392dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="444dp" />
+
+</android.support.constraint.ConstraintLayout>
